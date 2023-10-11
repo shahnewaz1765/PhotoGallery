@@ -1,0 +1,21 @@
+.clock-container {
+    background-color:white;
+    padding: 14px;
+  }
+  
+  .clock-text {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    color: #24241aea;
+  }
+.custom-font{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 24px;
+    background-color: #fff; /* Set your background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    
+}
+.custom-link{
+    color: #b9830f; 
+      
+}

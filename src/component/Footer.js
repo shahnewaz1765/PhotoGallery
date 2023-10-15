@@ -7,7 +7,7 @@ import '../style/footer.css';
 
 const Footer = () => {
   return (
-    <section>
+    <section className="foot">
       <hr className="footer-separator" />
       <section className="d-flex justify-content-evenly " >
        

@@ -16,8 +16,8 @@ const Gallery = () => {
           throw new Error("Network response was not OK");
         }
       })
-      .then((fetchData) => {
-        setData(fetchData);
+      .then((data) => {
+        setData(data);
       })
       .catch((error) => {
         console.error("Fetch error:", error);

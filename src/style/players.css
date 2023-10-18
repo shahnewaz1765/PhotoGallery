@@ -1,0 +1,19 @@
+.list-group{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px; 
+  }
+ .list-group-item{
+    width: 100%; 
+ }
+
+.container {
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+  }
+.photo {
+    max-width: 150px; /* Set the maximum width */
+    height: auto; /* Maintain the aspect ratio by setting height to auto */
+  }
+  

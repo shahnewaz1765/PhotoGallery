@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../component/Navbar";
- 
+import "../style/players.css";
+
 const Players = () => {
   const [data, setData] = useState(null);
 
@@ -35,11 +36,20 @@ const Players = () => {
   return (
     <div>
       <Navbar />
-      <ul>
+      <ul className="list-group">
         {data.record.map((item, i) => (
-          <li key={i}>
-            <h3>{item.name}<br/></h3>
+          
+          <li key={i} className="list-group-item">
+            <h3>
+              {item.name}
+              <br />
+            </h3>
             {item.position}
+            <br />
+          
+              <img src={item.img_url} className="photo" />
+          
+
             <hr />
           </li>
         ))}

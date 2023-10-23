@@ -36,24 +36,26 @@ const Players = () => {
   return (
     <div>
       <Navbar />
-      <ul className="list-group">
-        {data.record.map((item, i) => (
-          
-          <li key={i} className="list-group-item">
-            <h3>
-              {item.name}
-              <br />
-            </h3>
-            {item.position}
-            <br />
-          
-              <img src={item.img_url} className="photo" />
-          
+        <div>
+                <ul className="list-group">
+                  {data.record.map((item, i) => (
+                    
+                    <li key={i} className="list-group-item  d-flex flex-column justify-content-between">
+                      <h3>
+                        {item.name}
+                        
+                      </h3>
+                      {item.position}
+                      
+                    
+                        <img src={item.img_url} className="photo" />
+                    
 
-            <hr />
-          </li>
-        ))}
-      </ul>
+                      <hr />
+                    </li>
+                  ))}
+                </ul>
+                </div>        
     </div>
   );
 };
